@@ -1,1 +1,1 @@
-"# tmdb-clone-django-react" 
+# tmdb-clone-django-react
