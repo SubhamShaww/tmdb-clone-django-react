@@ -1,0 +1,80 @@
+.movies {
+  position: relative;
+  padding-left: 40px;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.category-title {
+  margin: 30px 0 20px 0;
+}
+
+.row-posters {
+  display: flex;
+
+  padding-bottom: 20px;
+}
+
+.row-posters-blur {
+  width: 60px;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-image: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  pointer-events: none;
+}
+
+.each-movie-box {
+  margin-right: 20px;
+  object-fit: contain;
+  max-height: fit-content;
+  max-width: 160px;
+}
+
+.each-trailer-box {
+  max-width: 356px;
+}
+
+.row-poster {
+  cursor: pointer;
+  object-fit: contain;
+  max-height: 240px;
+  max-width: 160px;
+  border-radius: 10px;
+  transition: transform 450ms;
+}
+
+.row-poster-backdrop {
+  object-fit: contain;
+  max-height: 200px;
+  max-width: 350px;
+}
+
+.row-poster-backdrop:hover {
+  transform: scale(1.04);
+}
+
+.row-poster-content {
+  padding: 26px 10px 0;
+}
+
+.row-poster-content-trailer {
+  margin-bottom: 50px;
+}
+
+.movie-title {
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.movie-date {
+  padding-top: 5px;
+  font-size: 0.9rem;
+  color: rgba(0, 0, 0, 0.6);
+}
