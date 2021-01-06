@@ -7,10 +7,6 @@ import movieTrailer from "movie-trailer";
 function Movies({ title, fetchUrl, isTrailer, isTrending }) {
   const [movies, setMovies] = useState([]);
   const [trailerUrl, setTrailerUrl] = useState("");
-  const [trailerBackgroundUrl, setTrailerBackgroundUrl] = useState("");
-  // const [showBlur, setShowBlur] = useState(true);
-  // const [scrollPosition, setScrollPosition] = useState(0);
-  // const myRef = useRef(null);
 
   const imageBaseUrl = "https://image.tmdb.org/t/p/original";
 
