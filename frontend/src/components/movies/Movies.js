@@ -23,23 +23,6 @@ function Movies({ title, fetchUrl, isTrailer, isTrending }) {
     }
 
     fetchData();
-
-    // const handleScroll = () => {
-    //   const currentPosition = myRef.current;
-
-    //   // window.pageYOffset;
-
-    //   if (currentPosition > 20) {
-    //     setShowBlur(false);
-    //     setScrollPosition(currentPosition);
-    //   }
-    // };
-
-    // window.addEventListener("scroll", handleScroll, { passive: true });
-
-    // return () => {
-    //   window.removeEventListener("scroll", handleScroll);
-    // };
   }, [fetchUrl]);
 
   const opts = {
