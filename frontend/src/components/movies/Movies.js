@@ -137,7 +137,7 @@ function Movies({ title, fetchUrl, isTrailer, isTrending }) {
             )
           );
         })}
-        <div className="row-posters-blur"></div>
+        <div className={!isTrailer && "row-posters-blur"}></div>
       </div>
 
       {trailerUrl && <Youtube videoId={trailerUrl} opts={opts} />}
